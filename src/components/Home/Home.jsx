@@ -4,6 +4,8 @@ const { Content, Footer } = Layout;
 
 import { Link } from "react-router";
 
+import AccountDetails from "../AccountDetails";
+
 const items = [
   {
     key: 1,
@@ -36,8 +38,8 @@ const App = () => {
   } = theme.useToken();
   return (
     <Layout>
-      
-      <Content style={{ padding: "0 48px" }}>
+      <AccountDetails />
+      {/* <Content style={{ padding: "0 48px" }}>
         <div
           style={{
             background: colorBgContainer,
@@ -48,8 +50,7 @@ const App = () => {
         >
           Content
         </div>
-      </Content>
-
+      </Content> */}
     </Layout>
   );
 };
